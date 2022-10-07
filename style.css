@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.pinterest-card {
+  width: 400px;
+  height: 537px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.image-container {
+  position: relative;
+}
+
+.red-button {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 80px;
+  height: 50px;
+  border-radius: 35px;
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  right: 20px;
+  transition: transform 1s;
+}
+.pinterest-card:hover .red-button {
+  transform: translateY(140%);
+}
+
+.westwing-button {
+  background-color: white;
+  opacity: 80%;
+  color: black;
+  border: none;
+  width: 200px;
+  height: 60px;
+  border-radius: 35px;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: -250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 1s;
+}
+
+.pinterest-card:hover .westwing-button {
+  transform: translateX(140%);
+}
+
+.import-button {
+  background-color: white;
+  opacity: 80%;
+  color: black;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: -80px;
+  transition: transform 1s;
+  font-size: 30px;
+}
+
+.pinterest-card:hover .import-button {
+  transform: translateX(550%);
+}
+
+.dots-button {
+  background-color: white;
+  opacity: 80%;
+  color: black;
+  font-size: 30px;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  left: -100px;
+  transition: transform 1s;
+}
+
+.pinterest-card:hover .dots-button {
+  transform: translateX(700%);
+}
